@@ -1,0 +1,5 @@
+选择Runnable 还是 Thread
+
+场景描述
+1.Java是单继承机制，不允许同时继承多个类。因此，当你继承Thread类(extends Thread)后，你就不能再继承其他类了。而你实现Runnable接口就不一样了，你可以继承其他类了。
+2.当你继承Thread类时，你的每一个Thread对象创造不同的对象然后关联它们。而继承Runnable接口则不一样，多个线程共享一个对象。
